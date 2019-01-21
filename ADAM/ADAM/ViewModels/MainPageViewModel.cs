@@ -22,7 +22,7 @@ namespace ADAM.ViewModels
 
         private Column[] GetLayout()
         {
-            var assembly = IntrospectionExtensions.GetTypeInfo(typeof(MainPage)).Assembly;
+            var assembly = IntrospectionExtensions.GetTypeInfo(typeof(MainPageViewModel)).Assembly;
             Stream stream = assembly.GetManifestResourceStream("ADAM.Assets.layout.json");
             Column[] Columns;
             using (var reader = new StreamReader(stream))
